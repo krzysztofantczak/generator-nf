@@ -4,6 +4,12 @@ Generator is a language agnostic project bootstrapping tool, more about this pro
 
 ### Installation
 
+Dependencies
+
+```bash
+npm install -g generator; generate --setup
+```
+
 Installing template into generator directory
 
 ```bash
