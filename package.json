@@ -35,7 +35,7 @@
   },
   "scripts": {
     "start": "node src/server",
-    "test": "node node_modules/testem/testem -f test/testem.json",
+    "test": "node node_modules/testem/testem ci -f test/testem.json",
     "test:karma": "node node_modules/karma/bin/karma start test/karma.conf.js",
     "test:testem": "node node_modules/testem/testem -f test/testem.json",
     "test:ptor": "node node_modules/grunt-cli/bin/grunt protractor:singlerun"
