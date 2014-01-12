@@ -1,6 +1,6 @@
 ## Generator-NF
 
-![CI Status](https://travis-ci.org/krzysztofantczak/generator-nf.png)
+[![Build Status](https://travis-ci.org/krzysztofantczak/generator-nf.png)](https://travis-ci.org/krzysztofantczak/generator-nf)
 
 Generator is a language agnostic project bootstrapping tool, more about this project on [Generator](https://github.com/thisandagain/generator) site.
 
