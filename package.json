@@ -34,12 +34,6 @@
     "url": "__repository__"
   },
   "scripts": {
-//    "build-js": "browserify browser/main.js | uglifyjs -mc > static/bundle.js",
-//    "build-css": "cat static/pages/*.css tabs/*/*.css",
-//    "build": "npm run build-js && npm run build-css",
-//    "watch-js": "watchify browser/main.js -o static/bundle.js -dv",
-//    "watch-css": "catw static/pages/*.css tabs/*/*.css -o static/bundle.css -v",
-//    "watch": "npm run watch-js & npm run watch-css",
     "start": "node src/server",
     "test": "tap test/*.js",
     "test:karma": "node node_modules/karma/bin/karma start test/karma.conf.js",
