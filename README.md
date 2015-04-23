@@ -18,21 +18,22 @@ Installing template into generator directory
 git clone https://github.com/krzysztofantczak/generator-nf.git ~/.generator/nf
 ```
 
-Using our template
-
-```bash
-generator -t nf -n myProject
-cd myProject
-npm install -d
-gulp dev
-```
-
 Few environment requirements
 
 ```bash
 
 npm install -g gulp bower
 
+```
+
+Using our template
+
+```bash
+generator -t nf -n myProject
+cd myProject
+npm install -d
+bower install
+gulp dev
 ```
 
 # License
