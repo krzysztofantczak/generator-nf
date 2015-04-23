@@ -1,0 +1,21 @@
+{
+  "name": "__name__",
+  "version": "0.0.1",
+  "homepage": "https://github.com/krzysztofantczak/generator-nf",
+  "description": "__description__",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.1"
+  }
+}
