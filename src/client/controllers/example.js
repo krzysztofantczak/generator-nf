@@ -10,8 +10,8 @@ function ExampleCtrl() {
   // ViewModel
   var vm = this;
 
-  vm.title = 'AngularJS, Gulp, and Browserify!';
-  vm.number = 1234;
+  vm.title = 'AngularJS, Gulp, and Browserify!!';
+  vm.number = 46456456456;
 
 }
 
