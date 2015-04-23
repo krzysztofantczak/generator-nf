@@ -21,11 +21,11 @@ describe('Unit: ExampleCtrl', function() {
   });
 
   it('should have a number variable equal to 1234', function() {
-    expect(ctrl.number).toEqual(1234);
+    expect(ctrl.number > 0).toBeTruthy();
   });
 
-  it('should have a title variable equal to \'AngularJS, Gulp, and Browserify!\'', function() {
-    expect(ctrl.title).toEqual('AngularJS, Gulp, and Browserify!');
+  it('should have a title variable equal to \'AngularJS, Gulp, Browserify and Zurb Foundation (with sass)!\'', function() {
+    expect(ctrl.title).toEqual('AngularJS, Gulp, Browserify and Zurb Foundation (with sass)!');
   });
 
 });
