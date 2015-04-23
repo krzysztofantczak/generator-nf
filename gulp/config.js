@@ -6,22 +6,22 @@ module.exports = {
 
   'styles': {
     'src' : 'public/styles/**/*.scss',
-    'dest': '.build/css'
+    'dest': '.dist/css'
   },
 
   'scripts': {
     'src' : 'src/client/**/*.js',
-    'dest': '.build/js'
+    'dest': '.dist/js'
   },
 
   'images': {
     'src' : 'public/images/**/*',
-    'dest': '.build/images'
+    'dest': '.dist/images'
   },
 
   'fonts': {
     'src' : ['public/fonts/**/*'],
-    'dest': '.build/fonts'
+    'dest': '.dist/fonts'
   },
 
   'views': {
@@ -34,13 +34,13 @@ module.exports = {
   },
 
   'gzip': {
-    'src': '.build/**/*.{html,xml,json,css,js,js.map}',
-    'dest': '.build/',
+    'src': '.dist/**/*.{html,xml,json,css,js,js.map}',
+    'dest': '.dist/',
     'options': {}
   },
 
   'dist': {
-    'root'  : '.build'
+    'root'  : '.dist'
   },
 
   'browserify': {

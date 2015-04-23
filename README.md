@@ -22,6 +22,9 @@ Using our template
 
 ```bash
 generator -t nf -n myProject
+cd myProject
+npm install -d
+gulp dev
 ```
 
 # License
