@@ -27,6 +27,14 @@ npm install -d
 gulp dev
 ```
 
+Few environment requirements
+
+```bash
+
+npm install -g gulp bower
+
+```
+
 # License
 
 (The MIT License)
