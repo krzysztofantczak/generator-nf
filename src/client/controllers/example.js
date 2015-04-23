@@ -5,14 +5,18 @@ var controllersModule = require('./_index');
 /**
  * @ngInject
  */
-function ExampleCtrl() {
+function ExampleCtrl($interval) {
 
   // ViewModel
   var vm = this;
 
-  vm.title = 'AngularJS, Gulp, and Browserify!!';
-  vm.number = 46456456456;
+  vm.title = 'AngularJS, Gulp, Browserify and Zurb Foundation (with sass)!';
+  vm.number = parseInt(Math.random()*(+new Date));
 
+  $interval(function()
+  {
+    vm.number = parseInt(Math.random()*(+new Date));
+  }, 2000);
 }
 
 controllersModule.controller('ExampleCtrl', ExampleCtrl);
