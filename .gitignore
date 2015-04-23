@@ -26,6 +26,7 @@ node_modules
 
 coverage
 src/vendor/*
+!src/vendor/.gitkeep
 
 _SpecRunner.html
 
