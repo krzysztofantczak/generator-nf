@@ -36,6 +36,10 @@ bower install
 gulp dev
 ```
 
+```Known bugs
+When You add a new controller you have to restart your gulp dev because if you don't do that you will have error in yout console
+```
+
 # License
 
 (The MIT License)
