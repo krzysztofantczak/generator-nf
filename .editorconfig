@@ -2,6 +2,14 @@
 
 root = true
 
+# public/styles
+[public/styles/*]
+charset = utf-8
+
+# public/views
+[public/views/*]
+charset = utf-8
+
 # client code
 [src/client/*]
 charset = utf-8
