@@ -61,8 +61,8 @@ function buildScript(file) {
         compress: { drop_console: true }
       }))))
       .pipe(gulpif(createSourcemap, sourcemaps.write('./')))
-      .pipe(gulp.dest(config.scripts.dest))
-      .pipe(gulpif(browserSync.active, browserSync.reload({ stream: true, once: true })));
+      .pipe(gulp.dest(global.destPath + config.scripts.dest))
+    .pipe(gulpif(browserSync.active, browserSync.reload({ stream: true, once: true })));
   }
 
   return rebundle();

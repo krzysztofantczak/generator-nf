@@ -9,7 +9,7 @@ gulp.task('views', function() {
 
   // Put our index.html in the dist folder
   gulp.src('public/index.html')
-    .pipe(gulp.dest(config.dist.root));
+    .pipe(gulp.dest(global.destPath));
 
   // Process any other view files from app/views
   return gulp.src(config.views.src)

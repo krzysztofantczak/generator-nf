@@ -2,26 +2,26 @@
 
 module.exports = {
 
-  'serverport': 3000,
+  'serverport': 3005,
 
   'styles': {
     'src' : 'public/styles/**/*.{scss,sass}',
-    'dest': '.dist/css'
+    'dest': '/css'
   },
 
   'scripts': {
     'src' : 'src/client/**/*.js',
-    'dest': '.dist/js'
+    'dest': '/js'
   },
 
   'images': {
     'src' : 'public/images/**/*',
-    'dest': '.dist/images'
+    'dest': '/images'
   },
 
   'fonts': {
     'src' : ['public/fonts/**/*'],
-    'dest': '.dist/fonts'
+    'dest': '/fonts'
   },
 
   'views': {
@@ -35,18 +35,24 @@ module.exports = {
 
   'gzip': {
     'src': '.dist/**/*.{html,xml,json,css,js,js.map}',
-    'dest': '.dist/',
+    'dest': '/',
     'options': {}
   },
 
   'dist': {
-    'root'  : '.dist'
+    'root'  : '.dist',
+    'dev': '.dev-dist',
+    'prod': '.dist'
   },
 
   'browserify': {
     'entries'   : ['./src/client/main.js'],
     'bundleName': 'main.js',
     'sourcemap' : true
+  },
+
+  'angular': {
+    'watch'   : ['./src/client/controllers/**/*.js', './src/client/directives/**/*.js', './src/client/services/**/*.js']
   },
 
   'test': {
