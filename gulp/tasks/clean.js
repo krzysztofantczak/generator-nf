@@ -3,9 +3,12 @@
 var config = require('../config');
 var gulp   = require('gulp');
 var del    = require('del');
+var args        = require('optimist').argv;
 
 gulp.task('clean', function(cb) {
 
-  del([config.dist.dev, config.dist.prod], cb);
+  var delDir = (args.D) ? args.D : config.dist[args._];
+
+  del([delDir], cb);
 
 });
