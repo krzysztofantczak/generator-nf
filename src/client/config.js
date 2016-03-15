@@ -2,7 +2,7 @@
 
 var AppSettings = {
   appTitle: 'Example Application',
-  apiUrl: '/api/v1'
+  apiPath: 'http://API_PATH:PORT/'
 };
 
 module.exports = AppSettings;

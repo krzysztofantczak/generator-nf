@@ -54,15 +54,15 @@ function buildScript(file) {
     gutil.log('Rebundle...');
 
     return stream.on('error', handleErrors)
-      .pipe(source(file))
-      .pipe(gulpif(createSourcemap, buffer()))
-      .pipe(gulpif(createSourcemap, sourcemaps.init()))
-      .pipe(gulpif(global.isProd, streamify(uglify({
-        compress: { drop_console: true }
-      }))))
-      .pipe(gulpif(createSourcemap, sourcemaps.write('./')))
-      .pipe(gulp.dest(global.destPath + config.scripts.dest))
-    .pipe(gulpif(browserSync.active, browserSync.reload({ stream: true, once: true })));
+        .pipe(source(file))
+        .pipe(gulpif(createSourcemap, buffer()))
+        .pipe(gulpif(createSourcemap, sourcemaps.init()))
+        .pipe(gulpif(global.isProd, streamify(uglify({
+          compress: { drop_console: true }
+        }))))
+        .pipe(gulpif(createSourcemap, sourcemaps.write('./')))
+        .pipe(gulp.dest(global.destPath + config.scripts.dest))
+        .pipe(gulpif(browserSync.active, browserSync.reload({ stream: true, once: true })));
   }
 
   return rebundle();
