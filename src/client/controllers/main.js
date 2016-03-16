@@ -5,7 +5,7 @@ var controllersModule = require('./_index');
 /**
  * @ngInject
  */
-function ExampleCtrl($interval) {
+function MainCtrl($interval) {
 
   // ViewModel
   var vm = this;
@@ -19,4 +19,4 @@ function ExampleCtrl($interval) {
   }, 2000);
 }
 
-controllersModule.controller('ExampleCtrl', ExampleCtrl);
+controllersModule.controller('MainCtrl', MainCtrl);

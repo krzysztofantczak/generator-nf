@@ -13,7 +13,7 @@ function Routes($stateProvider, $locationProvider, $urlRouterProvider, $httpProv
 
     .state('Home', {
       url        : '/',
-      controller : 'ExampleCtrl as home',
+      controller : 'MainCtrl as home',
       templateUrl: 'home.html',
       title      : 'Home'
     });
