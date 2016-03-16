@@ -14,6 +14,7 @@ require('./templates');
 require('./controllers/_index');
 require('./services/_index');
 require('./directives/_index');
+require('./factories/_index');
 
 angular.module('jm.i18next').config(['$i18nextProvider', function ($i18nextProvider) {
   $i18nextProvider.options = {
@@ -37,6 +38,7 @@ angular.element(document).ready(function() {
     'ui.router',
     'templates',
     'app.controllers',
+    'app.factories',
     'app.services',
     'app.directives'
   ];

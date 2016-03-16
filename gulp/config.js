@@ -51,10 +51,6 @@ module.exports = {
     'sourcemap' : true
   },
 
-  'angular': {
-    'watch'   : ['./src/client/controllers/**/*.js', './src/client/directives/**/*.js', './src/client/services/**/*.js']
-  },
-
   'test': {
     'karma': 'test/karma.conf.js',
     'protractor': 'test/protractor.conf.js'
