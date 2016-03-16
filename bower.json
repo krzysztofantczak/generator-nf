@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "foundation": "~5.5.1"
+    "foundation": "~5.5.1",
+    "ng-i18next": "~0.5.2"
   }
 }

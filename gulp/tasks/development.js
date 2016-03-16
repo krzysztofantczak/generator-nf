@@ -13,6 +13,6 @@ gulp.task('dev', ['clean'], function(cb) {
   global.isProd = false;
   global.destPath = (args.D) ? args.D : config.dist.dev;
 
-  runSequence(['styles', 'images', 'fonts', 'views', 'browserify'], 'watch', cb);
+  runSequence(['styles', 'images', 'fonts', 'locales', 'views', 'browserify'], 'watch', cb);
 
 });
