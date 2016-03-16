@@ -5,7 +5,7 @@ var controllersModule = require('./_index');
 /**
  * @ngInject
  */
-function MasterCtrl($scope, $i18next) {
+function MasterCtrl($scope, $i18next, user) {
 
     var vm = $scope;
     vm.lang = 'en';

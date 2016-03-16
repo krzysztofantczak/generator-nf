@@ -3,7 +3,7 @@
 /**
  * @ngInject
  */
-function OnRun($rootScope, AppSettings) {
+function OnRun($rootScope, config) {
 
   // change page title based on state
   $rootScope.$on('$stateChangeSuccess', function(event, toState) {
@@ -14,7 +14,7 @@ function OnRun($rootScope, AppSettings) {
       $rootScope.pageTitle += ' \u2014 ';
     }
 
-    $rootScope.pageTitle += AppSettings.appTitle;
+    $rootScope.pageTitle += config.appTitle;
   });
 
 }
