@@ -9,10 +9,8 @@ gulp.task('clean', function(cb) {
 
   var delDir = (args.D) ? args.D : config.dist[args._];
 
-  del([delDir]).then(function(data, err) {
-    if(!err) {
-      cb(false, 'callback');
-    }
+  del([delDir]).then(function() {
+    cb();
   });
 
 });

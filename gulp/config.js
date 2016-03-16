@@ -58,7 +58,7 @@ module.exports = {
 
   'locales': {
     'src' : ['src/locales/**/*.json'],
-    'dest': '.dev-dist/locales'
+    'dest': '/locales'
   }
 
 };

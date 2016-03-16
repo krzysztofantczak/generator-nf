@@ -10,7 +10,7 @@ gulp.task('locales', function() {
 
     return gulp.src(config.locales.src)
         .pipe(changed(config.locales.dest)) // Ignore unchanged files
-        .pipe(gulp.dest(config.locales.dest))
+        .pipe(gulp.dest(global.destPath + config.locales.dest))
         .pipe(gulpif(browserSync.active, browserSync.reload({ stream: true })));
 
 });
