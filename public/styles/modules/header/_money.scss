@@ -1,0 +1,42 @@
+.money {
+  padding-left: 1rem;
+  display: flex;
+  align-items: baseline;
+  &--item {
+
+    &:not(:first-child) {
+      padding-left: .5rem;
+    }
+
+    &.first {
+      a {
+        color: $right-wrap--header--font-color;
+        &:hover {
+          opacity: .7;
+        }
+      }
+      font-size: 1.4rem;
+    }
+
+    &.second {
+      a {
+        color: $right-wrap--header2--font-color;
+        &:hover {
+          opacity: .7;
+        }
+      }
+      font-size: 1.2rem;
+    }
+
+    &.third {
+      a {
+        color: $right-wrap--header3--font-color;
+        &:hover {
+          opacity: .7;
+        }
+      }
+      font-size: 1rem;
+    }
+
+  }
+}

@@ -1,0 +1,40 @@
+.panel-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  margin-top: -54px;
+  padding-top: 54px;
+  height: 100vh;
+  line-height: 1;
+
+  & > * {
+    //padding: 10px 15px;
+  }
+
+  &--first-box {
+    flex: 0 1 auto;
+  }
+
+  &--others {
+    background-color: $main-content--background-color;
+    flex: 1 0 100%;
+    box-shadow: inset 0 7px 6px -7px rgba(0, 0, 0, 0.4), inset -7px 0 6px -7px rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    height: auto;
+    overflow: auto;
+
+  }
+
+  &.is-right {
+    flex: 1 1 auto;
+
+    .panel-content--others {
+
+      box-shadow: inset 0 7px 6px -7px rgba(0, 0, 0, 0.4), inset 7px 0 6px -7px rgba(0, 0, 0, 0.4);
+    }
+  }
+}

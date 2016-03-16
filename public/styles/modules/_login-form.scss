@@ -1,0 +1,61 @@
+.login-form {
+  position: relative;
+  top: 50%;
+  padding: 2rem;
+  display: flex;
+  flex: 0 1 auto;
+  transform: translate(0, -50%);
+  flex-direction: column;
+  height: auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 7px -1px rgba(0,0,0,.4);
+
+  &--header {
+    display: flex;
+    align-self: center;
+    margin-bottom: 2rem;
+
+    & > * {
+      display: flex;
+      flex: 0 1 auto;
+      align-items: center;
+    }
+
+    i {
+      font-size: 2.4em;
+      padding: 0 0.7rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: normal;
+      line-height: 2rem;
+      margin-left: 12px;
+    }
+  }
+
+  &--form {
+    flex: 1 1 auto;
+  }
+
+
+  &--controls {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & > * {
+      flex: 0 1 auto;
+    }
+
+    &--checkbox {
+      flex: 0 1 auto;
+    }
+
+    &--button {
+      flex: 1 1 auto;
+
+    }
+  }
+}

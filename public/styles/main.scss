@@ -1,13 +1,53 @@
 @import "../../src/vendor/foundation/scss/normalize";
 @import "../../src/vendor/foundation/scss/foundation";
 
+@import '../../src/vendor/font-awesome-sass/assets/stylesheets/font-awesome';
+
 @import "vars";
 @import "modules";
+@import "layouts";
 @import "typography";
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 body {
-  //font-family: Helvetica, sans-serif
-  color: $font-color--dark;
-  background-color: $background--light;
-  padding: $half-space;
+
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $main--font-color;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+input {
+  margin: 0;
+}
+
+select {
+  margin: 0 !important;
+
+  &[multiple] {
+  }
 }

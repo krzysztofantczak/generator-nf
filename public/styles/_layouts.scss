@@ -1,0 +1,18 @@
+@import "layouts/classic";
+@import "layouts/header";
+@import "layouts/left-sidebar";
+@import "layouts/main";
+
+.l-wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &--main {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    background-color: $main-content--background-color;
+  }
+}

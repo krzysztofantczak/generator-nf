@@ -1,0 +1,24 @@
+<div class="login-form">
+    <header class="login-form--header">
+        <i class="fa fa-comments-o"></i>
+        <h1>BackOffice Support System</h1>
+    </header>
+    <form ng-submit="signin()">
+        <div class="login-form--form">
+            <div ng-if="error">{{ error }}</div>
+            <label>
+                Login
+                <input type="text" ng-model="user.username">
+            </label>
+            <label>
+                Password
+                <input type="password" ng-model="user.password">
+            </label>
+        </div>
+        <div class="login-from--controls">
+            <div class="login-from--controls--button">
+                <button type="submit" class="button small float-right">Login</button>
+            </div>
+        </div>
+    </form>
+</div>

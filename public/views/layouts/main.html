@@ -1,0 +1,54 @@
+<div class="l-wrap">
+    <header class="l-header">
+        <div class="l-header--general">
+            <i class="fa fa-comments-o"></i>
+            <h1>{{ pageTitle }}</span></h1>
+        </div>
+        <div class="l-header--user">
+            <div class="l-header--user--money">
+                <!--<ul class="money">-->
+                    <!--<li class="money&#45;&#45;item first"><a ui-sref="user.profile">100€</a></li>-->
+                    <!--<li class="money&#45;&#45;item second"><a ui-sref="user.profile">240€</a></li>-->
+                    <!--<li class="money&#45;&#45;item third"><a ui-sref="user.profile">172€</a></li>-->
+                <!--</ul>-->
+            </div>
+            <div class="l-header--user--info" dropdown-toggle="#user-dropdown">
+                <div class="l-header--user--info--name">
+                    <span>John Smith</span>
+                    <i class="fa fa-chevron-down"></i>
+                    <ul id="user-dropdown" class="f-dropdown right">
+                        <li class="noborder">
+                            <a ui-sref="user.profile"><i class="fa fa-user"></i>Profile</a>
+                        </li>
+                        <li class="hr"></li>
+                        <li class="">
+                            <a><i class="fa status online"></i>Set online</a>
+                        </li>
+                        <li class="noborder">
+                            <a><i class="fa status away"></i>Set away</a>
+                        </li>
+                        <li class="hr"></li>
+                        <li class="">
+                            <a ng-click="user.logout()"><i class="fa fa-sign-out"></i>Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="l-header--user--info--avatar" style="background: url('images/desktop.jpg') no-repeat;">
+                    <div class="is-active"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="l-wrap--main">
+        <nav class="l-left-sidebar">
+            <ul class="left-sidebar">
+                <li class="left-sidebar--item"><a ui-sref="home" class="left-sidebar--item--link"><i
+                        class="fa fa-home"></i></a></li>
+                <li class="left-sidebar--item"><a ui-sref="user.auth" class="left-sidebar--item--link"><i
+                        class="fa fa-sign-in"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <main class="l-main" ui-view></main>
+    </div>
+</div>

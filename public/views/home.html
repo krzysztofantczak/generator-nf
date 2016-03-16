@@ -1,24 +1,24 @@
-<h1 class="heading -large">{{ home.title }}</h1>
+<div class="panel-content--others">
+    <h1 class="heading -large">{{ home.title }}</h1>
 
-<h3 class="heading -medium">Here is a fancy number served up courtesy of Angular: <span class="number-example">{{ home.number }}</span>
-</h3>
+    <h3 class="heading -medium">Here is a fancy number served up courtesy of Angular: <span class="number-example">{{ home.number }}</span>
+    </h3>
 
-<img example-directive src="images/angular.png" height="100"/>
-<img example-directive src="images/gulp.png" height="100"/>
-<img example-directive src="images/browserify.png" height="100"/>
+    <pre>{{test}}</pre>
 
-<pre>{{test}}</pre>
+    <span>{{'test.test' | i18next}}</span>
 
-<span>{{'test.test' | i18next}}</span>
-
-<ul>
-    <li class="has-dropdown">
-        <a>{{ lang | uppercase }}</a>
-        <ul class="dropdown">
-            <li ng-class="{ 'is-active': lang == 'en'}"><a href="javascript:void(0)" ng-click="changeLng('en')">EN</a>
-            </li>
-            <li ng-class="{ 'is-active': lang == 'pl'}"><a href="javascript:void(0)" ng-click="changeLng('pl')">PL</a>
-            </li>
-        </ul>
-    </li>
-</ul>
+    <ul>
+        <li class="has-dropdown">
+            <a>{{ lang | uppercase }}</a>
+            <ul class="dropdown">
+                <li ng-class="{ 'is-active': lang == 'en'}"><a href="javascript:void(0)"
+                                                               ng-click="changeLng('en')">EN</a>
+                </li>
+                <li ng-class="{ 'is-active': lang == 'pl'}"><a href="javascript:void(0)"
+                                                               ng-click="changeLng('pl')">PL</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

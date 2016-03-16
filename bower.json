@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "foundation": "~5.5.1",
-    "ng-i18next": "~0.5.2"
+    "ng-i18next": "~0.5.2",
+    "font-awesome-sass": "~4.5.0"
   }
 }
